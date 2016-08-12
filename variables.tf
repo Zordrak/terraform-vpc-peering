@@ -6,11 +6,11 @@ variable "environment" {
 
 variable "peer_matrix" {
   type        = "list"
-  description = "List of peering partner tuples (['peer_aws_account_id,peer_vpc_id,peer_cidr_block']) with which to create vpc peering connections"
   default     = [
-    "0123456789012,vpc-99999999999999999,172.16.0.0/16",
-    "0123456789011,vpc-99999999999999998,172.32.0.0/16"
+    "0123456789012,vpc-01234567890123456,10.99.0.0/16",
+    "2109876543210,vpc-65432109876543210,172.16.0.0/16"
   ]
+  description = "List of peering partner tuples (['peer_aws_account_id,peer_vpc_id,peer_cidr_block']) with which to create vpc peering connections"
 }
 
 variable "project" {
